@@ -1,5 +1,11 @@
 # algorithms
 
+A random assortment of algorithms, what they're used for, their implementations in Python, their complexity analyses and relevant examples.
+
+* [Segment Tree](#segment-tree)
+* [Union-Find (Disjoint-Set Union)](#union-find-disjoint-set-union)
+* [Topological Sorting](#topological-sorting)
+
 ## [Segment Tree](/segment-tree.py)
 
 Used to perform range queries and updates.
