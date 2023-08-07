@@ -6,12 +6,11 @@ A random assortment of algorithms, what they're used for, their implementations 
 * [Union-Find (Disjoint-Set Union)](#union-find-disjoint-set-union)
 * [Topological Sorting](#topological-sorting)
 * [Kadane's Algorithm](#kadanes-algorithm)
+* [Rabin-Karp Algorithm](#rabin-karp-algorithm)
 
 ## [Segment Tree](/python/segment-tree.py)
 
 Used to perform range queries and updates.
-
-![segment-tree](/img/segment-tree.jpeg)
 
 * Height `ceil(log n)`
 * Number of nodes `1 + 2 + 4 + 8 + ... + 2^(log n) = 2^(log n + 1) - 1 < 4n` (sum of a geometric series)
@@ -27,8 +26,6 @@ Used to perform range queries and updates.
 
 Used for managing disjoint sets and supports two main operations: union (combining two sets) and find (determining to which set an element belongs to).
 
-![union-find](/img/union-find.png)
-
 * `O(n)` time for union and find
 * Amortized `O(log n)` time with rank optimization
 * Amortized `O(1)` time with rank optimization and path compression
@@ -42,8 +39,6 @@ Used for managing disjoint sets and supports two main operations: union (combini
 
 A linear ordering of the vertices in a directed acyclic graph (DAG) in such a way that for every directed edge `u -> v`, the vertex `u`  comes before `v` in the ordering.
 
-![topological-sorting](/img/topological-sorting.png)
-
 * `O(V + E)` time
 * `O(V)` space
 
@@ -55,11 +50,22 @@ A linear ordering of the vertices in a directed acyclic graph (DAG) in such a wa
 
 Used to find the maximum subarray sum in an array of integers. Based on dynamic programming.
 
-![kadanes-algorithm](/img/kadanes-algorithm.png)
-
 * `O(n)` time
 * `O(1)` space
 
 **Examples:**
 
 * [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/)
+
+## [Rabin-Karp Algorithm](/python/rabin-karp-algorithm.py)
+
+A string searching algorithm that finds the occurrences of a pattern within a text. It uses hashing to quickly compare the pattern to potential substrings in the text.
+
+* Time complexity depends on the hash function used
+* Typically linear in the length of the text
+* Worst case `O((n + m - 1) * m)` time, where `m` is the length of the pattern and `n` is the length of the text
+* Typically `O(1)` space
+
+**Examples:**
+
+* [Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/)
