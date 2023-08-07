@@ -8,6 +8,7 @@ A random assortment of algorithms, what they're used for, their implementations 
 * [Kadane's Algorithm](#kadanes-algorithm)
 * [Rabin-Karp Algorithm](#rabin-karp-algorithm)
 * [Knuth-Morris-Pratt (KMP) Algorithm](#knuth-morris-pratt-kmp-algorithm)
+* [Dijkstra's Algorithm](#dijkstras-algorithm)
 
 ## [Segment Tree](/python/segment-tree.py)
 
@@ -81,3 +82,14 @@ A string searching algorithm that finds the occurrences of a pattern within a te
 **Examples:**
 
 * [Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/)
+
+## [Dijkstra's Algorithm](/python/dijkstras-algorithm.py)
+
+Used to find the shortest paths from a single source vertex to all other vertices in a weighted graph with non-negative edge weights. The algorithm maintains a set of vertices with known shortest distances and gradually explores and updates the distances to other vertices.
+
+* `O((V + E) * log V)` time using a priority queue
+* `O(V + E)` space
+
+**Examples:**
+
+* [Network Delay Time](https://leetcode.com/problems/network-delay-time/description/)
