@@ -9,6 +9,7 @@ A random assortment of algorithms, what they're used for, their implementations 
 * [Rabin-Karp Algorithm](#rabin-karp-algorithm)
 * [Knuth-Morris-Pratt (KMP) Algorithm](#knuth-morris-pratt-kmp-algorithm)
 * [Dijkstra's Algorithm](#dijkstras-algorithm)
+* [Prim's Algorithm](#prims-algorithm)
 
 ## [Segment Tree](/python/segment-tree.py)
 
@@ -93,3 +94,14 @@ Used to find the shortest paths from a single source vertex to all other vertice
 **Examples:**
 
 * [Network Delay Time](https://leetcode.com/problems/network-delay-time/description/)
+
+## [Prim's Algorithm](/python/prims-algorithm.py)
+
+Used to find the minimum spanning tree (MST) of a connected, undirected graph with weighted edges. The minimum spanning tree is a subgraph that connects all vertices while minimizing the total edge weight. Prim's algorithm starts with an arbitrary vertex and grows the MST by adding the edge with the smallest weight that connects a vertex in the MST to a vertex outside the MST.
+
+* `O((V + E) * log V)` time using a priority queue
+* `O(V + E)` space
+
+**Examples:**
+
+* [Min Cost to Connect All Points](https://leetcode.com/problems/min-cost-to-connect-all-points/description/)
