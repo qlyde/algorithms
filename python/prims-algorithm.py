@@ -12,18 +12,19 @@ class Graph:
     def prim(self):
         mst = []
         visited = set()
-        heap = [(0, 0)]  # Start with any vertex (0 here)
+        heap = [(0, 0, -1)]  # Start with any vertex (0 here), -1 is a placeholder for the source vertex
         heapq.heapify(heap)
 
         while heap:
-            weight, vertex = heapq.heappop(heap)
+            weight, vertex, source = heapq.heappop(heap)
             if vertex not in visited:
                 visited.add(vertex)
-                mst.append((vertex, weight))
+                if source != -1:
+                    mst.append((source, vertex, weight))
 
                 for neighbor, edge_weight in self.graph[vertex]:
                     if neighbor not in visited:
-                        heapq.heappush(heap, (edge_weight, neighbor))
+                        heapq.heappush(heap, (edge_weight, neighbor, vertex))
 
         return mst
 
@@ -41,5 +42,5 @@ g.add_edge(4, 5, 6)
 
 minimum_spanning_tree = g.prim()
 print("Minimum Spanning Tree:")
-for vertex, weight in minimum_spanning_tree:
-    print("Edge:", vertex, "-", weight)
+for u, v, weight in minimum_spanning_tree:
+    print("Edge:", u, "-", v, "Weight:", weight)
