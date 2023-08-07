@@ -7,7 +7,7 @@ Used to perform range queries and updates.
 ![segment-tree](/img/segment-tree.jpeg)
 
 * Height `ceil(log n)`
-* Number of nodes `1 + 2 + 4 + 8 + ... + 2^(log n) = 2^(log n + 1) - 1 < 4n` (sum of a gemetric series)
+* Number of nodes `1 + 2 + 4 + 8 + ... + 2^(log n) = 2^(log n + 1) - 1 < 4n` (sum of a geometric series)
 * `O(n)` time for building the tree
 * `O(log n)` time for queries and updates
 * `O(n)` space
