@@ -7,6 +7,7 @@ A random assortment of algorithms, what they're used for, their implementations 
 * [Topological Sorting](#topological-sorting)
 * [Kadane's Algorithm](#kadanes-algorithm)
 * [Rabin-Karp Algorithm](#rabin-karp-algorithm)
+* [Knuth-Morris-Pratt (KMP) Algorithm](#knuth-morris-pratt-kmp-algorithm)
 
 ## [Segment Tree](/python/segment-tree.py)
 
@@ -65,6 +66,17 @@ A string searching algorithm that finds the occurrences of a pattern within a te
 * Typically linear in the length of the text
 * Worst case `O((n + m - 1) * m)` time, where `m` is the length of the pattern and `n` is the length of the text
 * Typically `O(1)` space
+
+**Examples:**
+
+* [Find the Index of the First Occurrence in a String](https://leetcode.com/problems/find-the-index-of-the-first-occurrence-in-a-string/description/)
+
+## [Knuth-Morris-Pratt (KMP) Algorithm](/python/kmp-algorithm.py)
+
+A string searching algorithm that finds the occurrences of a pattern within a text. It uses a "LPS" array to skip unnecessary comparisons during the search.
+
+* `O(n + m)` time
+* `O(m)` space due to the LPS array
 
 **Examples:**
 
