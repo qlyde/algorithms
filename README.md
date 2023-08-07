@@ -18,7 +18,7 @@ Used to perform range queries and updates.
 * `O(log n)` time for queries and updates
 * `O(n)` space
 
-Examples:
+**Examples:**
 
 * [Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable/description/)
 
@@ -33,7 +33,7 @@ Used for managing disjoint sets and supports two main operations: union (combini
 * Amortized `O(1)` time with rank optimization and path compression
 * `O(n)` space
 
-Examples:
+**Examples:**
 
 * [Number of Provinces](https://leetcode.com/problems/number-of-provinces/description/)
 
@@ -46,6 +46,6 @@ A linear ordering of the vertices in a directed acyclic graph (DAG) in such a wa
 * `O(V + E)` time
 * `O(V)` space
 
-Examples:
+**Examples:**
 
 * [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/description/)
