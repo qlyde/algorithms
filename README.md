@@ -1,8 +1,10 @@
 # algorithms
 
-## [Segment Trees](/segment-tree.py)
+## [Segment Tree](/segment-tree.py)
 
 Used to perform range queries and updates.
+
+![segment-tree](/img/segment-tree.jpeg)
 
 * Height `ceil(log n)`
 * Number of nodes `1 + 2 + 4 + 8 + ... + 2^(log n) = 2^(log n + 1) - 1 < 4n` (sum of a gemetric series)
@@ -18,6 +20,8 @@ Examples:
 
 Used for managing disjoint sets and supports two main operations: union (combining two sets) and find (determining to which set an element belongs to).
 
+![union-find](/img/union-find.png)
+
 * `O(n)` time for union and find
 * Amortized `O(log n)` time with rank optimization
 * Amortized `O(1)` time with rank optimization and path compression
@@ -26,3 +30,16 @@ Used for managing disjoint sets and supports two main operations: union (combini
 Examples:
 
 * [Number of Provinces](https://leetcode.com/problems/number-of-provinces/description/)
+
+## [Topological Sorting](/topological-sorting.py)
+
+A linear ordering of the vertices in a directed acyclic graph (DAG) in such a way that for every directed edge `u -> v`, the vertex `u`  comes before `v` in the ordering.
+
+![topological-sorting](/img/topological-sorting.png)
+
+* `O(V + E)` time
+* `O(V)` space
+
+Examples:
+
+* [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/description/)
