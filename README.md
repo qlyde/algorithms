@@ -5,8 +5,9 @@ A random assortment of algorithms, what they're used for, their implementations 
 * [Segment Tree](#segment-tree)
 * [Union-Find (Disjoint-Set Union)](#union-find-disjoint-set-union)
 * [Topological Sorting](#topological-sorting)
+* [Kadane's Algorithm](#kadanes-algorithm)
 
-## [Segment Tree](/segment-tree.py)
+## [Segment Tree](/python/segment-tree.py)
 
 Used to perform range queries and updates.
 
@@ -22,7 +23,7 @@ Used to perform range queries and updates.
 
 * [Range Sum Query - Mutable](https://leetcode.com/problems/range-sum-query-mutable/description/)
 
-## [Union-Find (Disjoint-Set Union)](/union-find.py)
+## [Union-Find (Disjoint-Set Union)](/python/union-find.py)
 
 Used for managing disjoint sets and supports two main operations: union (combining two sets) and find (determining to which set an element belongs to).
 
@@ -37,7 +38,7 @@ Used for managing disjoint sets and supports two main operations: union (combini
 
 * [Number of Provinces](https://leetcode.com/problems/number-of-provinces/description/)
 
-## [Topological Sorting](/topological-sorting.py)
+## [Topological Sorting](/python/topological-sorting.py)
 
 A linear ordering of the vertices in a directed acyclic graph (DAG) in such a way that for every directed edge `u -> v`, the vertex `u`  comes before `v` in the ordering.
 
@@ -49,3 +50,16 @@ A linear ordering of the vertices in a directed acyclic graph (DAG) in such a wa
 **Examples:**
 
 * [Course Schedule II](https://leetcode.com/problems/course-schedule-ii/description/)
+
+## [Kadane's Algorithm](/python/kadanes-algorithm.py)
+
+Used to find the maximum subarray sum in an array of integers. Based on dynamic programming.
+
+![kadanes-algorithm](/img/kadanes-algorithm.png)
+
+* `O(n)` time
+* `O(1)` space
+
+**Examples:**
+
+* [Maximum Subarray](https://leetcode.com/problems/maximum-subarray/description/)
